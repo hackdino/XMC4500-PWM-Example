@@ -42,27 +42,28 @@ int main(void)
 
 	while(1)
 	{
-	if(i==100)
-		i=0;
-	_pwm(i++);
-	wait(10000);
+		if(i==100)
+			i=0;
+		_pwm(i++);
+		wait(10000);
 	}
 }
 
 
 int _pwm(uint32_t dutyC){
+	
+	doubl	 dc;
+	int		idc;
 
 	if(dutyC<0 && dutyC>100)
 		return 1;
 
-	double dc;
-	int		idc;
 	dc=dutyC*0.01;
 	dc=0xFFFF*dc;
 	idc=(int)dc;
 
-	CCU40_CC40->CRS=dc;  //duty cycle set
-	CCU40->GCSS|= (1<<CCU4_GCSS_S0SE_Pos); //Shadow transfer request
+	CCU40_CC40->CRS=dc;  									//duty cycle set
+	CCU40->GCSS|= (1<<CCU4_GCSS_S0SE_Pos); 					//Shadow transfer request
 
 	return 0;
 }

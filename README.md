@@ -1,5 +1,5 @@
 # XMC4500 PWM Example
-This is an simple XMC4500 Barebone PWM Example which use the CCU4.
+This is an simple XMC4500 Barebone PWM Example which use the CCU4.<br />
 The PWM duty cycle can change over the Compare Value.--hit <Enter>
     => DC = 1 - Compare-Value // (<Period-Value> +1)\n
 The PWM Frequency can change over the Period Value.\n

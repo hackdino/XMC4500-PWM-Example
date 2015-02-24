@@ -51,8 +51,6 @@ int main(void)
 	}
 }
 
-
-
 /*! \brief Function _pwm() generate a PWM output signal on an associated pin.
  *  \param dutyC ... duty cycle drom 0% to 100%
  *  \returns 0 upon success, >0 on error

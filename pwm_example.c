@@ -61,7 +61,7 @@ int _pwm(uint32_t dutyC){
 		return 1;
 
 	double dc;
-	int		idc;
+	int   idc;
 	dc=dutyC*0.01;
 	dc=0xEA5F-(0xEA5F*dc);
 	idc=(int)dc;

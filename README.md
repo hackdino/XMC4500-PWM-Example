@@ -5,5 +5,5 @@ The PWM duty cycle can change over the Compare Value.<br />
 The PWM Frequency can change over the Period Value.<br />
     => T  = Period-Value + 1<br />
 
-file:///home/nfranz/Documents/git/pwm20.png
+![alt text](https://cloud.githubusercontent.com/assets/11082084/6355945/3979d322-bc5a-11e4-9414-2d4ba341b2a7.png)
 

@@ -8,9 +8,12 @@ The PWM Frequency can change over the Period Value.<br />
 The following example show a pwm with a duty-cycle from 20% and a pwm Frequency from 1kHz. <br /><br />
 
 Calculating the Period-Value: <br />
-Period-Value = (10E-3/16,666ns)-1 <br /><br />
+Period-Value = (10E-3/16,666ns) - 1 <br /><br />
 Calculating the Compare-Value: <br />
 Compare-value = Period-value - (Period-value * 0,20) <br />
+
+
+The following picture shows the Output on P1.3 <br />
     
 
 
